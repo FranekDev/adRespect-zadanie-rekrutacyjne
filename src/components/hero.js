@@ -13,7 +13,10 @@ const Hero = () => {
 
         <div class="flex justify-between [&>a]:cursor-pointer">
             <button class="bg-green-800 text-white px-[24px] py-[12px] rounded-full">Skontaktuj się z nami</button>
-            <a href="realizacje" class="border-solid border-2 border-green-800 px-[24px] py-[12px] rounded-full text-green-800">Zobacz nasze realizacje</a>
+            <a href="#realizacje" class="flex space-x-3 w-fit border-solid border-2 border-green-800 px-[24px] py-[12px] rounded-full text-green-800">
+            <span class="whitespace-nowrap">Zobacz nasze realizacje</span>
+            <img src="./heroArrowDown.svg" alt="">
+            </a>
         </div>
 
     </aside>

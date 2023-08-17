@@ -22,17 +22,20 @@ const Offers = () => {
   const firstOfferTitle = 'Projekty';
   const firstOfferDescription =
     'Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.';
-  Offer(firstOfferTitle, firstOfferDescription);
+  const firstOfferIcon = `<img src="./projectsIcon.svg" alt="">`;
+  Offer(firstOfferTitle, firstOfferDescription, firstOfferIcon);
 
   const secondOfferTitle = 'Wizualizacje';
   const secondOfferDescription =
     'Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.';
-  Offer(secondOfferTitle, secondOfferDescription);
+  const secondOfferIcon = `<img src="./visualIcon.svg" alt="">`;
+  Offer(secondOfferTitle, secondOfferDescription, secondOfferIcon);
 
   const thirdOfferTitle = 'Realizacje';
   const thirdOfferDescription =
     'Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.';
-  Offer(thirdOfferTitle, thirdOfferDescription);
+  const thirdOfferIcon = `<img src="./realizationsIcon.svg" alt="">`;
+  Offer(thirdOfferTitle, thirdOfferDescription, thirdOfferIcon);
 };
 
 export default Offers;

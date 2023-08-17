@@ -5,14 +5,18 @@ const Footer = () => {
   footer.innerHTML = `
   <div class="flex-col space-y-8">
 
-    <div class="w-full flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-between">
-      logo
+    <div class="w-full flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-between space-y-4">
+      
+      <img src="./giarddesignWhite.svg" alt="logo">
       <aside class="flex justify-center items-center h-auto gap-6 text-sm md:text-base lg:text-base xl:text-base 2xl:text-base">
+        
         <div class="w-32 md:w-auto lg:w-auto xl:w-auto 2xl:w-auto">Daj znać, co możemy dla Ciebie zrobic!</div>
-        <button class='w-git h-auto bg-green-700 py-2 px-3 rounded-full'>
+        <button class='w-git h-auto bg-green-900 py-2 px-3 rounded-full'>
           Skontaktuj się z nami
         </button>
+
       </aside>
+
     </div>
 
     <div class="w-full h-[1px] bg-slate-300"></div>
@@ -34,15 +38,15 @@ const Footer = () => {
     </div>
 
 
-    <div class="flex justify-between">
+    <div class="flex justify-between ">
 
-      <div>
-        <span>Prawa zastrzeżone @ 2022</span>
+      <div class="h-full my-auto">
+        <div>Prawa zastrzeżone © 2022</div>
       </div>
     
-      <div>
-        <span>made by</span>
-        logo
+      <div class="flex-col justify-center items-center space-y-1 w-30 h-full">
+        <div class="w-20 ">made by</div>
+        <img src="./adRespect.svg" alt="adRespect">
       </div>
 
     </div>
