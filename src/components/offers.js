@@ -3,7 +3,7 @@ import Offer from './offer';
 const Offers = () => {
   const section = document.createElement('section');
   section.classList =
-    'flex-col w-full h-auto md:h-screen space-y-10 bg-[#F5F0EC] p-5';
+    'flex-col w-full h-auto md:h-screen space-y-10 bg-[#F5F0EC] p-5 py-10';
 
   section.innerHTML = `
   <div class="max-w-[1040px] flex-col space-y-5 w-3/4 m-auto">
@@ -14,7 +14,7 @@ const Offers = () => {
     </div>
   </div>
 
-  <div class="offers-view md:px-5 lg:px-5 xl:px-5 2xl:px-5 flex justify-center items-center w-full flex-wrap space-y-5"></div>
+  <div class="offers-view flex flex-col md:px-5 md:flex justify-center items-center w-full space-y-5 h-auto"></div>
   `;
 
   document.body.appendChild(section);

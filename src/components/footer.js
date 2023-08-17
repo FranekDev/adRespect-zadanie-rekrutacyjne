@@ -8,10 +8,10 @@ const Footer = () => {
     <div class="w-full flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-between space-y-4">
       
       <img src="./giarddesignWhite.svg" alt="logo">
-      <aside class="flex justify-center items-center h-auto gap-6 text-sm md:text-base lg:text-base xl:text-base 2xl:text-base">
+      <aside class="flex justify-between items-center h-auto gap-6 text-sm md:text-base lg:text-base xl:text-base 2xl:text-base">
         
-        <div class="w-32 md:w-auto lg:w-auto xl:w-auto 2xl:w-auto">Daj znać, co możemy dla Ciebie zrobic!</div>
-        <button class='w-git h-auto bg-green-900 py-2 px-3 rounded-full'>
+        <div class="w-auto md:w-auto lg:w-auto xl:w-auto 2xl:w-auto">Daj znać, co możemy dla Ciebie zrobic!</div>
+        <button class="w-git h-9 bg-green-900 py-2 px-3 rounded-full whitespace-nowrap">
           Skontaktuj się z nami
         </button>
 
@@ -24,10 +24,10 @@ const Footer = () => {
 
     <div class="flex w-full md:h-10 xl:h-10 2xl:h-10 lg:h-10 h-auto justify-between">
       <ul class="flex-col md:flex-row xl:flex 2xl:flex lg:flex gap-8" >
-        <li>Kontakt</li>
-        <li>Instagram</li>
-        <li>Facebook</li>
-        <li>Linkedin</li>
+        <li><a href="#">Kontakt</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Linkedin</a></li>
       </ul>
       <div class="flex-col lg:flex-row md:flex-row xl:flex-row 2xl:flex-row gap-8 w-fit">
         <div>000-000-000</div>

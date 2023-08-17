@@ -1,7 +1,7 @@
 const Nav = () => {
   const navbar = document.createElement('nav');
   navbar.classList =
-    'bg-slate-100 w-full p-6 flex justify-between items-center sticky top-0';
+    'bg-slate-100 w-full px-6 py-3 md:p-6 flex justify-between items-center sticky top-0 z-10';
 
   const logoContainer = document.createElement('span');
   logoContainer.textContent = 'Logo';
@@ -10,7 +10,7 @@ const Nav = () => {
   `;
 
   const links = document.createElement('div');
-  links.classList = 'flex gap-10 [&>*]:cursor-pointer';
+  links.classList = 'flex gap-10 [&>*]:cursor-pointer hidden md:flex';
 
   const offersLink = document.createElement('a');
   offersLink.setAttribute('href', '#offers');
@@ -42,6 +42,16 @@ const Nav = () => {
   <img src="./search.svg" alt="Szukaj">
   `;
 
+  const burgerMenu = document.createElement('div');
+  burgerMenu.classList = 'md:hidden';
+  burgerMenu.innerHTML = `
+  <div class="space-y-2 cursor-pointer">
+    <span class="block w-8 h-[0.2rem] bg-gray-600"></span>
+    <span class="block w-8 h-[0.2rem] bg-gray-600"></span>
+    <span class="block w-5 h-[0.2rem] bg-gray-600"></span>
+  </div>
+  `;
+
   links.appendChild(offersLink);
   links.appendChild(aboutLink);
   links.appendChild(registerLink);
@@ -49,6 +59,7 @@ const Nav = () => {
   links.appendChild(searchContainer);
   navbar.appendChild(logoContainer);
   navbar.appendChild(links);
+  navbar.appendChild(burgerMenu);
 
   document.body.appendChild(navbar);
 };
