@@ -2,9 +2,9 @@ const About = () => {
   const section = document.createElement('section');
 
   section.innerHTML = `
-    <div class="w-full h-auto bg-green-900 flex-col">
-        <div class="w-full bg-slate-300">
-            <img src="./aboutPhoto.png" alt="Ladne zdjecie">
+    <div class="w-full h-auto bg-green-900 flex-col flex md:flex-row">
+        <div class="w-full bg-slate-300 h-auto">
+            <img src="./aboutPhoto.png" alt="Ladne zdjecie" class="h-full w-full">
         </div>
         <div class="w-full py-10 text-[#F5F0EC] flex items-center justify-center h-auto">
             <div class="w-4/5 space-y-20">

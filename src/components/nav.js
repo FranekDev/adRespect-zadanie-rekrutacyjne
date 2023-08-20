@@ -1,3 +1,21 @@
+const mobileMenu = (hide) => {
+  const burgerMenu = document.querySelector('#burger-menu');
+  const input = document.querySelector('#search-input');
+  let isHidden = hide;
+  burgerMenu.addEventListener('click', () => {
+    if (isHidden) {
+      input.classList.remove('hidden');
+      isHidden = !isHidden;
+    } else {
+      input.classList.add('animate-hideInput');
+      setTimeout(() => {
+        input.classList.add('hidden');
+      }, 530);
+      isHidden = !isHidden;
+    }
+  });
+};
+
 const Nav = () => {
   const navbar = document.createElement('nav');
   navbar.classList =
@@ -37,15 +55,23 @@ const Nav = () => {
   contactLink.setAttribute('href', '#contact');
   contactLink.textContent = 'Kontakt';
 
+  const searchInput = document.createElement('input');
+  searchInput.setAttribute('type', 'text');
+  searchInput.setAttribute('placeholder', 'Search');
+  searchInput.id = 'search-input';
+  searchInput.classList =
+    'bg-transparent h-full outline-none p-1 border-b-2 border-black hidden w-40 animate-expandInput';
+
   const searchContainer = document.createElement('div');
+  searchContainer.classList = `flex justify-center items-center`;
   searchContainer.innerHTML = `
-  <img src="./search.svg" alt="Szukaj">
+  <img src="./search.svg" alt="Szukaj" id="burger-menu">
   `;
 
   const burgerMenu = document.createElement('div');
   burgerMenu.classList = 'md:hidden';
   burgerMenu.innerHTML = `
-  <div class="space-y-2 cursor-pointer">
+  <div class="space-y-2 cursor-pointer" id="burger-menu">
     <span class="block w-8 h-[0.2rem] bg-gray-600"></span>
     <span class="block w-8 h-[0.2rem] bg-gray-600"></span>
     <span class="block w-5 h-[0.2rem] bg-gray-600"></span>
@@ -56,12 +82,16 @@ const Nav = () => {
   links.appendChild(aboutLink);
   links.appendChild(registerLink);
   links.appendChild(contactLink);
+  links.appendChild(searchInput);
   links.appendChild(searchContainer);
   navbar.appendChild(logoContainer);
   navbar.appendChild(links);
   navbar.appendChild(burgerMenu);
 
   document.body.appendChild(navbar);
+
+  const isHidden = true;
+  mobileMenu(isHidden);
 };
 
 export default Nav;
