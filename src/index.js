@@ -6,6 +6,11 @@ import Offers from './components/offers';
 import About from './components/about';
 import Contact from './components/contact';
 
+const root = document.getElementsByTagName('html')[0];
+root.classList.add('scroll-smooth');
+
+document.body.classList.add('bg-[#F5F0EC]');
+
 Nav();
 Hero();
 Offers();

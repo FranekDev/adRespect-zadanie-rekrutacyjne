@@ -11,8 +11,8 @@ const Footer = () => {
       <aside class="flex justify-between items-center h-auto gap-6 text-sm md:text-base lg:text-base xl:text-base 2xl:text-base">
         
         <div class="w-auto md:w-auto lg:w-auto xl:w-auto 2xl:w-auto">Daj znać, co możemy dla Ciebie zrobic!</div>
-        <button class="w-git h-9 bg-green-900 py-2 px-3 rounded-full whitespace-nowrap">
-          Skontaktuj się z nami
+        <button class="w-git h-9 bg-green-900 py-2 px-3 rounded-full whitespace-nowrap flex justify-center items-center">
+          <div class="px-6 pt-[12px] pb-[14px]">Skontaktuj się z nami</div>
         </button>
 
       </aside>

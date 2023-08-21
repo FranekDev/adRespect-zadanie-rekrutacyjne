@@ -2,19 +2,20 @@ import Offer from './offer';
 
 const Offers = () => {
   const section = document.createElement('section');
+  section.id = 'offers';
   section.classList =
-    'flex-col w-full h-auto md:h-auto space-y-10 bg-[#F5F0EC] p-5 py-10';
+    'flex-col w-full md:h-auto space-y-10 bg-[#F5F0EC] p-5 py-10 pt-[120px] pb-[160px] space-y-[96px]';
 
   section.innerHTML = `
   <div class="max-w-[1040px] flex-col space-y-5 w-3/4 m-auto">
     <div class="text-xs text-green-800">Oferta</div>
     <div class="md:text-5xl text-3xl">Działamy <i>kompleksowo</i></div>
-    <div class="md:text-base w-full text-md">
+    <div class="md:text-base w-full text-md leading-6">
         Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. 
     </div>
   </div>
 
-  <div class="offers-view flex flex-col md:px-5 md:flex-row md:flex-wrap justify-center items-center w-full space-y-5 h-auto md:space-x-5 bg-amber-200"></div>
+  <div class="offers-view grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-16 w-auto h-full"></div>
   `;
 
   document.body.appendChild(section);
