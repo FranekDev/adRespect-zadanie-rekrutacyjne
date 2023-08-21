@@ -2,7 +2,7 @@ const Offer = (title, description, icon) => {
   const offerContainer = document.querySelector('.offers-view');
   const page = document.createElement('div');
   page.innerHTML = `
-  <div class="flex-col bg-white md:w-80 w-72 h-[370px] space-y-10 md:space-y-20 py-12 px-10 rounded-xl transition-all hover:[transform:rotateY(360deg)] cursor-pointer hover:scale-105 hover:shadow-xl">
+  <div class="flex-col bg-white md:w-80 w-72 h-auto md:h-[370px] space-y-10 md:space-y-20 py-12 px-10 rounded-xl transition-all hover:[transform:rotateY(360deg)] cursor-pointer hover:scale-105 hover:shadow-xl">
     <div class="space-y-3">
         <div>
             ${icon}
@@ -17,7 +17,7 @@ const Offer = (title, description, icon) => {
                 Dowiedz się więcej
             </div>
             <div>
-                <img src="./offerArrowRight.svg" alt="">
+                <img src="./svg/offerArrowRight.svg" alt="">
             </div>
 
         </div>

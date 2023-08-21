@@ -11,7 +11,7 @@ const Contact = () => {
               <div>Zostańmy w kontakcie!</div>
               <div>Znajdziesz nas na <i><b>Instagramie</b></i>.</div>
           </div>
-          <div class="flex lg:flex-col justify-between items-start w-full space-y-6">
+          <div class="flex lg:flex-col justify-between items-end md:items-start w-full space-y-6">
               <div class="text-base w-[150px] lg:w-[150px] md:w-auto">Śledź nasze najnowsze realizacje!</div>
               <a href="#" class="pt-[10px] pb-[12px] px-[24px] bg-[#F5F0EC] text-green-900 rounded-full text-base transition-all hover:bg-slate-100 hover:shadow-md">Instagram</a>
           </div>

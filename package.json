@@ -49,6 +49,7 @@
     "webpack-dev-server": "^4.15.1"
   },
   "dependencies": {
+    "macy": "^2.5.1",
     "onchange": "^7.1.0"
   }
 }

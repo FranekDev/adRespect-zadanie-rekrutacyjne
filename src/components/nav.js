@@ -109,7 +109,7 @@ const Nav = () => {
   logoContainer.textContent = 'Logo';
   logoContainer.innerHTML = `
     <a href="#hero">
-      <img src="./giarddesign.svg" alt="Logo">
+      <img src="./svg/giarddesign.svg" alt="Logo">
     </a>
   `;
 
@@ -137,7 +137,7 @@ const Nav = () => {
     'md:block'
   );
   arrowContainer.innerHTML = `
-  <img src="./arrowDown.svg" alt="Rozwiń">
+  <img src="./svg/arrowDown.svg" alt="Rozwiń">
   `;
 
   const offersListContainer = document.createElement('div');
@@ -220,7 +220,7 @@ const Nav = () => {
   const searchContainer = document.createElement('div');
   searchContainer.classList = `flex justify-center items-center h-full hidden md:block animate-opacity`;
   searchContainer.innerHTML = `
-  <img src="./search.svg" alt="Szukaj" id="search-icon">
+  <img src="./svg/search.svg" alt="Szukaj" id="search-icon">
   `;
 
   const burgerMenu = document.createElement('div');

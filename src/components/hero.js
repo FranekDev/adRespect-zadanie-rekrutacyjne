@@ -1,3 +1,12 @@
+// const sliderNext = () => {
+//   const imageSlider = document.querySelector('#img-slider').src;
+//   //   const right = document.querySelector('#right');
+//   const path = imageSlider.replace(/^.*[\\/]/, '').split('.')[0];
+//   const newPath = `${+path + 1}.png`;
+//   imageSlider.src = { newPath };
+//   console.log(newPath);
+// };
+
 const Hero = () => {
   const main = document.createElement('main');
   main.id = 'hero';
@@ -23,7 +32,7 @@ const Hero = () => {
                             Zobacz nasze realizacje
                         </p>
                     </div>
-                    <img src="./heroArrowDown.svg" alt="">
+                    <img src="./svg/heroArrowDown.svg" alt="">
                 </div>    
             </a>
         </div>
@@ -31,12 +40,13 @@ const Hero = () => {
     </aside>
 
     <div class="h-screen md:h-auto w-full relative bg-amber-200">
+    <img src="1.jpg" class="h-full w-full" id="img-slider">
         <div class="flex bottom-0 right-0 absolute px-8 py-6 space-x-8 bg-[#F5F0EC]">
-            <button class="w-[50px] h-[50px] flex justify-center items-center">
-                <img src="./sliderLeft.svg" alt="Poprzednie zdjęcie">
+            <button class="w-[50px] h-[50px] flex justify-center items-center" id="left">
+                <img src="./svg/sliderLeft.svg" alt="Poprzednie zdjęcie">
             </button>
-            <button class="w-[50px] h-[50px] flex justify-center items-center">
-                <img src="./sliderRight.svg" alt="Poprzednie zdjęcie">
+            <button class="w-[50px] h-[50px] flex justify-center items-center" id="right">
+                <img src="./svg/sliderRight.svg" alt="Następne zdjęcie">
             </button>
         </div>
     </div>
@@ -45,6 +55,30 @@ const Hero = () => {
   `;
 
   document.body.appendChild(main);
+
+  const img = document.querySelector('#img-slider');
+  const next = document.querySelector('#right');
+  const prev = document.querySelector('#left');
+  const images = ['1.jpg', '2.png'];
+  let currentIndex = 0;
+
+  const updateSliderImage = (index) => {
+    img.src = images[index];
+  };
+
+  next.addEventListener('click', () => {
+    if (currentIndex < images.length - 1) {
+      currentIndex++;
+      updateSliderImage(currentIndex);
+    }
+  });
+
+  prev.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSliderImage(currentIndex);
+    }
+  });
 };
 
 export default Hero;

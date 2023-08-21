@@ -5,6 +5,7 @@ import Hero from './components/hero';
 import Offers from './components/offers';
 import About from './components/about';
 import Contact from './components/contact';
+import Realizations from './components/realizations';
 
 const root = document.getElementsByTagName('html')[0];
 root.classList.add('scroll-smooth');
@@ -15,7 +16,6 @@ Nav();
 Hero();
 Offers();
 About();
+Realizations();
 Contact();
 Footer();
-
-// document.body.classList.add('bg-amber-500');

@@ -22,7 +22,7 @@ const About = () => {
                     <a href="" class="">
                         Poznaj nas bliżej
                     </a>
-                    <img src="./aboutArrowRight.svg" alt="">
+                    <img src="./svg/aboutArrowRight.svg" alt="">
                 </div>
             </div>
         </div>

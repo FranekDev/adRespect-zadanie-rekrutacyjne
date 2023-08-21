@@ -7,7 +7,7 @@ const Footer = () => {
 
     <div class="w-full flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row justify-between space-y-4">
       
-      <img src="./giarddesignWhite.svg" alt="logo" class="w-[115px]">
+      <img src="./svg/giarddesignWhite.svg" alt="logo" class="w-[115px]">
       <aside class="flex justify-between items-center h-auto gap-6 text-sm md:text-base lg:text-base xl:text-base 2xl:text-base">
         
         <div class="w-auto md:w-auto lg:w-auto xl:w-auto 2xl:w-auto">Daj znać, co możemy dla Ciebie zrobic!</div>
@@ -29,7 +29,7 @@ const Footer = () => {
         <li><a href="#">Facebook</a></li>
         <li><a href="#">Linkedin</a></li>
       </ul>
-      <div class="flex flex-col lg:flex-row md:flex-row xl:flex-row 2xl:flex-row gap-8 w-fit">
+      <div class="flex flex-col lg:flex-row md:flex-row xl:flex-row 2xl:flex-row gap-0 md:gap-8 w-fit">
         <div>000-000-000</div>
         <div>giarddesign@kontakt.pl</div>
       </div>
@@ -46,7 +46,7 @@ const Footer = () => {
     
       <div class="flex-col justify-center items-center space-y-1 w-30 h-full">
         <div class="w-20 ">made by</div>
-        <img src="./adRespect.svg" alt="adRespect">
+        <img src="./svg/adRespect.svg" alt="adRespect">
       </div>
 
     </div>
