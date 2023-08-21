@@ -44,7 +44,7 @@ const Hero = () => {
 </div>
 
     <div class="h-[92vh] md:h-auto w-full relative bg-amber-200">
-    <img src="1.jpg" class="h-full w-full" id="img-slider">
+    <img src="1.jpg" class="h-full w-full object-cover" id="img-slider">
         <div class="flex bottom-0 right-0 absolute px-8 py-6 space-x-8 bg-[#F5F0EC]">
             <button class="w-[50px] h-[50px] flex justify-center items-center" id="left">
                 <img src="./svg/sliderLeft.svg" alt="Poprzednie zdjęcie">
