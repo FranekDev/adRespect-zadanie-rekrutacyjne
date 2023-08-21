@@ -51,16 +51,16 @@ module.exports = {
         }
       },
       animation: {
-        expandInput: 'expandInput .4s ease-in-out forwards',
-        hideInput: 'hideInput .4s ease-in-out forwards',
-        rotateLeft: 'rotateLeft .4s ease-in-out forwards',
-        rotateRight: 'rotateRight .4s ease-in-out forwards',
+        expandInput: 'expandInput .3s ease-in-out forwards',
+        hideInput: 'hideInput .3s ease-in-out forwards',
+        rotateLeft: 'rotateLeft .3s ease-in-out forwards',
+        rotateRight: 'rotateRight .3s ease-in-out forwards',
         slideDown: 'slideDown .3s ease-in-out forwards',
         slideUp: 'slideUp .3s ease-in-out forwards',
-        showMobileMenu: 'showMobileMenu .3s ease-in-out forwards',
-        hideMobileMenu: 'hideMobileMenu .3s ease-in-out forwards',
-        opacity: 'opacity .3s ease-in-out forwards',
-        decreaseOpacity: 'decreaseOpacity .3s ease-in-out forwards'
+        showMobileMenu: 'showMobileMenu .2s ease-in-out forwards',
+        hideMobileMenu: 'hideMobileMenu .2s ease-in-out forwards',
+        opacity: 'opacity .2s ease-in-out forwards',
+        decreaseOpacity: 'decreaseOpacity .2s ease-in-out forwards'
       }
     }
   },

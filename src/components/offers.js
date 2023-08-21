@@ -10,7 +10,7 @@ const Offers = () => {
   <div class="max-w-[1040px] flex-col space-y-5 w-3/4 m-auto">
     <div class="text-xs text-green-800">Oferta</div>
     <div class="md:text-5xl text-3xl">Działamy <i>kompleksowo</i></div>
-    <div class="md:text-base w-full text-md leading-6">
+    <div class="w-full text-base leading-6">
         Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. 
     </div>
   </div>

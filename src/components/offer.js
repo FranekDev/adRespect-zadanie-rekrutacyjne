@@ -8,7 +8,7 @@ const Offer = (title, description, icon) => {
             ${icon}
         </div>
         <div class="md:text-2xl text-xl">${title}</div>
-        <div class="md:text-base text-sm">${description}</div>
+        <div class="text-base">${description}</div>
     </div>
     <div class="flex flex-col w-fit cursor-pointer group">
         <div class="text-green-800 flex justify-start items-center space-x-2 border-b-2 border-green-800 md:border-none">
