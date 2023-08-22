@@ -92,14 +92,15 @@ const Realizations = () => {
     'pt-[120px]',
     'pb-11',
     'realizations-container',
-    'z-10'
+    'z-10',
+    'to-darken'
   );
   section.innerHTML = `
     <div class="h-full relative">
 
         <div class="w-full h-auto flex flex-col justify-start items-start gap-4 pl-10 md:pl-40 pb-24">
             <div class="text-green-800 text-xs">Realizacje</div>
-            <div class="text-5xl font-montserrat font-medium">Nasze <i>projekty</i></div>
+            <div class="text-4xl md:text-5xl font-montserrat font-medium">Nasze <i>projekty</i></div>
         </div>
         
       <div class="images relative h-[1000px] md:h-[1475px] overflow-hidden transition-all" id="images-gallery">

@@ -1,6 +1,6 @@
 const Hero = () => {
   const main = document.createElement('main');
-  main.classList.add('hideElement');
+  main.classList.add('hideElement', 'to-darken');
   main.id = 'hero';
 
   main.innerHTML = `

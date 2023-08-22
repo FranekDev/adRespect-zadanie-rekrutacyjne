@@ -34,7 +34,12 @@ const mobileMenu = (hide) => {
   const contact = document.querySelector('.contact');
 
   burgerMenu.addEventListener('click', () => {
+    const toDarken = document.querySelectorAll('.to-darken');
     if (hidden) {
+      toDarken.forEach((dark) => {
+        dark.classList.remove('hideElement', 'showElement');
+        dark.classList.add('transition-all', 'opacity-50');
+      });
       links.classList.remove('hidden');
 
       dropdown.classList.add('hidden');
@@ -74,6 +79,10 @@ const mobileMenu = (hide) => {
 
       hidden = !hidden;
     } else {
+      toDarken.forEach((dark) => {
+        dark.classList.add('hideElement', 'showElement');
+        dark.classList.remove('transition-all', 'opacity-50');
+      });
       dropdown.classList.add('animate-decreaseOpacity');
       about.classList.add('animate-decreaseOpacity');
       realizations.classList.add('animate-decreaseOpacity');

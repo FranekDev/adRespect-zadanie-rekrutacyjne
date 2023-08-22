@@ -1,6 +1,6 @@
 const Footer = () => {
   const footer = document.createElement('footer');
-  footer.classList = ` bg-black w-full h-auto text-white px-[40px] py-[80px] flex-col space-y-20 md:px-64`;
+  footer.classList = `to-darken bg-black w-full h-auto text-white px-[40px] py-[80px] flex-col space-y-20 md:px-64`;
   footer.innerHTML = `
   <div class="flex-col space-y-8">
 

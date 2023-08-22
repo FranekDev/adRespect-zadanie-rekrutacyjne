@@ -1,7 +1,7 @@
 const About = () => {
   const section = document.createElement('section');
   section.id = 'about';
-  section.classList.add('hideElement');
+  section.classList.add('hideElement', 'to-darken');
 
   section.innerHTML = `
     <div class="w-full md:max-h-[720px] h-auto bg-green-900 flex-col flex md:flex-row">

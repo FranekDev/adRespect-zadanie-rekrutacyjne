@@ -4,7 +4,7 @@ const Offers = () => {
   const section = document.createElement('section');
   section.id = 'offers';
   section.classList =
-    'hideElement flex justify-center items-center flex-col w-full md:h-auto space-y-10 bg-[#F5F0EC] p-5 py-10 pt-[120px] pb-[160px] space-y-[96px]';
+    'to-darken hideElement flex justify-center items-center flex-col w-full md:h-auto space-y-10 bg-[#F5F0EC] p-5 py-10 pt-[120px] pb-[160px] space-y-[96px]';
 
   section.innerHTML = `
   <div class="max-w-[1040px] flex-col space-y-5 w-3/4 m-auto text-[#111111]">

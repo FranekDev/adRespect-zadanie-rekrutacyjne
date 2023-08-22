@@ -1,14 +1,13 @@
 const Offer = (title, description, icon) => {
   const offerContainer = document.querySelector('.offers-view');
   const page = document.createElement('div');
-  //   page.classList = 'px-10 py-12';
   page.id = title;
   page.innerHTML = `
 <div class="w-auto h-auto group">
 
-<div class="flex-col bg-white  w-72 h-auto md:w-[370px] space-y-10 md:space-y-20 py-12 px-10 rounded-xl transition-all group-hover:[transform:rotateY(360deg)] cursor-pointer hover:scale-105 group-hover:shadow-xl">
+<div class="flex flex-col justify-between bg-white  w-72 min-h-[412px] h-auto md:w-[370px] py-12 px-10 rounded-xl transition-all group-hover:[transform:rotateY(360deg)] cursor-pointer hover:scale-105 group-hover:shadow-xl">
     <div class="space-y-8">
-        <div>
+        <div class="w-[40px] h-[40px]">
             ${icon}
         </div>
         <div class="space-y-3">
