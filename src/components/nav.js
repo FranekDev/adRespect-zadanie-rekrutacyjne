@@ -29,9 +29,9 @@ const mobileMenu = (hide) => {
   const links = document.querySelector('#links');
   const input = document.querySelector('#search-input');
   const dropdown = document.querySelector('#dropdown');
-  const about = document.querySelector('#about');
-  const realizations = document.querySelector('#realizations');
-  const contact = document.querySelector('#contact');
+  const about = document.querySelector('.about');
+  const realizations = document.querySelector('.realizations');
+  const contact = document.querySelector('.contact');
 
   burgerMenu.addEventListener('click', () => {
     if (hidden) {
@@ -116,7 +116,7 @@ const Nav = () => {
   const links = document.createElement('div');
   links.id = 'links';
   links.classList =
-    'md:flex text-[#111111] md:gap-10 gap-3 [&>*]:cursor-pointer md:flex-row md:relative md:m-0 justify-start items-start md:justify-center md:items-center fixed mt-[450px] rounded-xl py-5 px-6 md:p-0 bg-white flex flex-col left-1/2 -translate-x-1/2 w-[85vw] shadow-xl md:shadow-none md:w-auto md:left-0 md:translate-x-0 hidden animate-showMobileMenu md:animate-none';
+    'md:flex text-[#111111] md:gap-10 gap-3 [&>*]:cursor-pointer md:flex-row md:relative md:m-0 justify-start items-start md:justify-center md:items-center fixed mt-[450px] rounded-xl py-5 px-6 md:p-0 bg-white flex flex-col left-1/2 -translate-x-1/2 w-[85vw] shadow-xl md:shadow-none md:w-auto md:left-0 md:translate-x-0 hidden animate-showMobileMenu md:animate-none font-inter';
 
   const dropdown = document.createElement('div');
   dropdown.id = 'dropdown';
@@ -168,11 +168,17 @@ const Nav = () => {
   const offerElementOne = document.createElement('li');
   const offerElementTwo = document.createElement('li');
   const offerElementThree = document.createElement('li');
-  offerElementOne.textContent = 'Projekty';
+  offerElementOne.innerHTML = `
+  <a href="#Projekty">Projekty</a>
+  `;
   offersList.appendChild(offerElementOne);
-  offerElementTwo.textContent = 'Wizualizacje';
+  offerElementTwo.innerHTML = `
+  <a href="#Wizualizacje">Wizualizacje</a>
+  `;
   offersList.appendChild(offerElementTwo);
-  offerElementThree.textContent = 'Realizacje';
+  offerElementThree.innerHTML = `
+  <a href="#Realizacje">Realizacje</a>
+  `;
   offersList.appendChild(offerElementThree);
 
   offersListContainer.appendChild(offersList);
@@ -184,8 +190,12 @@ const Nav = () => {
 
   const aboutLink = document.createElement('a');
   aboutLink.setAttribute('href', '#about');
-  aboutLink.id = 'about';
-  aboutLink.classList.add('animate-opacity', 'group/text', 'box-border');
+  aboutLink.classList.add(
+    'animate-opacity',
+    'group/text',
+    'box-border',
+    'about'
+  );
   aboutLink.innerHTML = `
   <span>O firmie</span>
   <div class="w-0 h-[2px] bg-slate-800 transition-all group-hover/text:w-full group-hover/text:h-[2px]"></div>
@@ -193,12 +203,12 @@ const Nav = () => {
 
   const registerLink = document.createElement('a');
   registerLink.setAttribute('href', '#realizations');
-  registerLink.id = 'realizations';
   registerLink.classList.add(
     'text-center',
     'animate-opacity',
     'group/text',
-    'box-border'
+    'box-border',
+    'realizations'
   );
   registerLink.innerHTML = `
   <span>Realizacje</span>
@@ -207,8 +217,12 @@ const Nav = () => {
 
   const contactLink = document.createElement('a');
   contactLink.setAttribute('href', '#contact');
-  contactLink.id = 'contact';
-  contactLink.classList.add('animate-opacity', 'group/text', 'box-border');
+  contactLink.classList.add(
+    'animate-opacity',
+    'group/text',
+    'box-border',
+    'contact'
+  );
   contactLink.innerHTML = `
   <span>Kontakt</span>
   <div class="w-0 h-[2px] bg-slate-800 transition-all group-hover/text:w-full group-hover/text:h-[2px]"></div>

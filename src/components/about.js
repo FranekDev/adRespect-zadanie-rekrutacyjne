@@ -13,7 +13,7 @@ const About = () => {
                 <div class="space-y-8">
                     <div class="space-y-3">
                         <div class="text-sm">O firmie</div>
-                        <div class="text-4xl w-fit">Tworzymy</br> z <i>pasją</i></div>
+                        <div class="text-4xl w-fit font-montserrat font-medium">Tworzymy</br> z <i>pasją</i></div>
                     </div>
                     <div class="max-w-[800px] text-base">
                         Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.

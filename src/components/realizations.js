@@ -99,7 +99,7 @@ const Realizations = () => {
 
         <div class="w-full h-auto flex flex-col justify-start items-start gap-4 pl-10 md:pl-40 pb-24">
             <div class="text-green-800 text-xs">Realizacje</div>
-            <div class="text-5xl">Nasze <i>projekty</i></div>
+            <div class="text-5xl font-montserrat font-medium">Nasze <i>projekty</i></div>
         </div>
         
       <div class="images relative h-[1000px] md:h-[1475px] overflow-hidden transition-all" id="images-gallery">

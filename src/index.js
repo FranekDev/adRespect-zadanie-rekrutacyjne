@@ -10,7 +10,7 @@ import Realizations from './components/realizations';
 const root = document.getElementsByTagName('html')[0];
 root.classList.add('scroll-smooth');
 
-document.body.classList.add('bg-[#F5F0EC]');
+document.body.classList.add('bg-[#F5F0EC]', 'font-inter');
 
 Nav();
 Hero();

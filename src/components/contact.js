@@ -7,7 +7,7 @@ const Contact = () => {
   <div class="h-full px-6 py-6 w-full lg:w-auto flex justify-center items-center">
     <div class="h-auto bg-green-900 w-auto flex flex-col lg:flex-row justify-center lg:justify-between items-center text-[#F5F0EC] text-[40px] leading-[48px] space-y-6 p-9 md:px-16 md:py-14 lg:px-[110px] lg:py-[110px] lg:space-x-16 lg:items-end">
     
-          <div class=" w-full lg:whitespace-nowrap h-full">
+          <div class=" w-full lg:whitespace-nowrap h-full font-montserrat">
               <div>Zostańmy w kontakcie!</div>
               <div>Znajdziesz nas na <i><b>Instagramie</b></i>.</div>
           </div>

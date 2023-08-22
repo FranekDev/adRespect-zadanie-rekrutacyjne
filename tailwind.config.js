@@ -3,6 +3,10 @@ module.exports = {
   content: ['./src/**/*.{html,js}', './src/components/**/*.{html,js}'],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+        montserrat: ['Montserrat', 'sans-serif']
+      },
       keyframes: {
         expandInput: {
           from: { width: '0px', 'margin-right': '-45px' },
