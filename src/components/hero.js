@@ -1,12 +1,3 @@
-// const sliderNext = () => {
-//   const imageSlider = document.querySelector('#img-slider').src;
-//   //   const right = document.querySelector('#right');
-//   const path = imageSlider.replace(/^.*[\\/]/, '').split('.')[0];
-//   const newPath = `${+path + 1}.png`;
-//   imageSlider.src = { newPath };
-//   console.log(newPath);
-// };
-
 const Hero = () => {
   const main = document.createElement('main');
   main.id = 'hero';
@@ -18,9 +9,9 @@ const Hero = () => {
 
     <aside class="md:h-full flex flex-col justify-center items-center w-full md:w-3/4 lg:w-[599px] space-y-[72px] md:space-y-12 bg-[#DCC1AB] px-10 py-12 h-[92vh]">
     <div class="space-y-11">
-        <div class="text-6xl">Nowoczesna aranżacja Twojego ogrodu</div>
+        <div class="text-6xl text-[#111111] leading-[70px]">Nowoczesna aranżacja Twojego ogrodu</div>
         
-        <div class="text-base leading-6">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</div>
+        <div class="text-base leading-normal">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</div>
     </div>
 
     <div class="lg:w-full flex flex-col space-y-3 lg:flex-row justify-start w-full md:w-auto md:justify-between [&>a]:cursor-pointer lg:space-y-0 lg:space-x-9">
@@ -71,14 +62,20 @@ const Hero = () => {
   };
 
   next.addEventListener('click', () => {
-    if (currentIndex < images.length - 1) {
+    if (currentIndex === images.length - 1) {
+      currentIndex = 0;
+      updateSliderImage(currentIndex);
+    } else if (currentIndex < images.length - 1) {
       currentIndex++;
       updateSliderImage(currentIndex);
     }
   });
 
   prev.addEventListener('click', () => {
-    if (currentIndex > 0) {
+    if (currentIndex === 0) {
+      currentIndex = images.length - 1;
+      updateSliderImage(currentIndex);
+    } else if (currentIndex > 0) {
       currentIndex--;
       updateSliderImage(currentIndex);
     }
