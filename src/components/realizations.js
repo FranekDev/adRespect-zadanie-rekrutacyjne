@@ -1,7 +1,6 @@
 import Macy from 'macy';
 
-const hideGallery = () => {
-  console.log('click hide');
+const hideGallery = (macy) => {
   const expandBtn = document.querySelector('#expand');
   const blurBg = document.querySelector('#bgBlured');
   const realizations = document.querySelector('.realizations-container');
@@ -35,6 +34,7 @@ const hideGallery = () => {
   expandBtn.classList.remove('hidden');
   hideBtn.classList.add('hidden');
   hideBtn.classList.remove('flex');
+  macy.runOnImageLoad();
 };
 
 const expandGallery = (macy) => {
@@ -76,7 +76,9 @@ const expandGallery = (macy) => {
     hideBtn.classList.remove('hidden');
     hideBtn.classList.add('flex');
     macy.runOnImageLoad();
-    hideBtn.addEventListener('click', hideGallery);
+    hideBtn.addEventListener('click', () => {
+      hideGallery(macy);
+    });
   });
 };
 
