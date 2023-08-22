@@ -5,7 +5,7 @@ const Offer = (title, description, icon) => {
   page.innerHTML = `
 <div class="w-auto h-auto group">
 
-<div class="flex flex-col justify-between bg-white  w-72 min-h-[412px] h-auto md:w-[370px] py-12 px-10 rounded-xl transition-all group-hover:[transform:rotateY(360deg)] cursor-pointer hover:scale-105 group-hover:shadow-xl">
+<div class="flex flex-col justify-between bg-white  w-72 min-h-[412px] h-auto xl:w-[370px] py-12 px-10 rounded-xl transition-all group-hover:[transform:rotateY(360deg)] cursor-pointer hover:scale-105 group-hover:shadow-xl">
     <div class="space-y-8">
         <div class="w-[40px] h-[40px]">
             ${icon}
