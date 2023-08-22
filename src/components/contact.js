@@ -1,7 +1,7 @@
 const Contact = () => {
   const section = document.createElement('section');
   section.id = 'contact';
-  section.classList.add('py-[60px]');
+  section.classList.add('py-[60px]', 'hideElement');
 
   section.innerHTML = `
   <div class="h-full px-6 py-6 w-full lg:w-auto flex justify-center items-center">

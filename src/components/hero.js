@@ -1,5 +1,6 @@
 const Hero = () => {
   const main = document.createElement('main');
+  main.classList.add('hideElement');
   main.id = 'hero';
 
   main.innerHTML = `
@@ -18,7 +19,7 @@ const Hero = () => {
         <button class="bg-green-800 text-white px-6 pt-[12px] pb-[14px] rounded-full w-fit hover:shadow-md lg:whitespace-nowrap hover:bg-green-900 transition-all">
             Skontaktuj się z nami
         </button>
-        <a href="#realizacje" class="flex w-fit border-solid border-2 border-green-800 px-[22px] pt-[12px] pb-[14px] rounded-full text-green-800">
+        <a href="#realizacje" class="flex w-fit border-solid border-2 border-green-800 px-[22px] pt-[12px] pb-[14px] rounded-full text-green-800 transition-all hover:shadow-xl">
             <div class="flex justify-center items-center space-x-[8px]">
                 <div class="flex items-center justify-center">
                     <p class="whitespace-nowrap">

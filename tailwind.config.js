@@ -20,14 +20,6 @@ module.exports = {
           from: { transform: 'rotate(0)' },
           to: { transform: 'rotate(360deg)' }
         },
-        slideDown: {
-          from: { 'margin-top': '-100px' },
-          to: { 'margin-top': '24px' }
-        },
-        slideUp: {
-          from: { 'margin-top': '24px' },
-          to: { 'margin-top': '-150px', 'z-index': '-100' }
-        },
         showMobileMenu: {
           from: { width: '0vw', height: '0px', 'margin-top': '0px' },
           to: { width: '85vw', height: '322px', 'margin-top': '450px' }
@@ -55,8 +47,6 @@ module.exports = {
         hideInput: 'hideInput .3s ease-in-out forwards',
         rotateLeft: 'rotateLeft .3s ease-in-out forwards',
         rotateRight: 'rotateRight .3s ease-in-out forwards',
-        slideDown: 'slideDown .3s ease-in-out forwards',
-        slideUp: 'slideUp .3s ease-in-out forwards',
         showMobileMenu: 'showMobileMenu .2s ease-in-out forwards',
         hideMobileMenu: 'hideMobileMenu .2s ease-in-out forwards',
         opacity: 'opacity .2s ease-in-out forwards',

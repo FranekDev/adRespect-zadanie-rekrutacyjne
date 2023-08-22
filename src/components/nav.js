@@ -103,7 +103,7 @@ const mobileMenu = (hide) => {
 const Nav = () => {
   const navbar = document.createElement('nav');
   navbar.classList =
-    'bg-white w-full px-6 py-3 md:p-6 flex justify-between items-center sticky top-0 z-10 h-[8vh]';
+    'hideElement bg-white w-full px-6 py-3 md:p-6 flex justify-between items-center sticky top-0 z-10 h-[8vh]';
 
   const logoContainer = document.createElement('span');
   logoContainer.textContent = 'Logo';
@@ -148,16 +148,16 @@ const Nav = () => {
     'md:py-5',
     'md:px-6',
     'md:bg-white',
-    'md:mt-[9vh]',
+    'md:mt-[-200px]',
+    'md:group-hover:mt-[24px]',
     'md:shadow-xl',
     'md:rounded-md',
     'md:absolute',
-    'group-hover:animate-slideDown',
-    'md:hidden',
-    'group-hover:block',
+    'z-[-100]',
     'md:border-none',
     'border-l-2',
     'border-slate-300',
+    'transition-all',
     'md:m-0',
     'ml-5',
     'mt-2'
@@ -175,16 +175,6 @@ const Nav = () => {
   offerElementThree.textContent = 'Realizacje';
   offersList.appendChild(offerElementThree);
 
-  // offersListContainer.addEventListener('mouseleave', () => {
-  //   offersListContainer.classList.remove('animate-slideDown');
-  //   offersListContainer.classList.add('animate-slideUp');
-  // });
-
-  // offersListContainer.addEventListener('mouseout', () => {
-  //   offersListContainer.classList.remove('animate-slideDown');
-  //   offersListContainer.classList.add('animate-slideUp');
-  // });
-
   offersListContainer.appendChild(offersList);
 
   offersLink.appendChild(arrowContainer);
@@ -195,20 +185,34 @@ const Nav = () => {
   const aboutLink = document.createElement('a');
   aboutLink.setAttribute('href', '#about');
   aboutLink.id = 'about';
-  aboutLink.classList.add('animate-opacity');
-  aboutLink.textContent = 'O firmie';
+  aboutLink.classList.add('animate-opacity', 'group/text', 'box-border');
+  aboutLink.innerHTML = `
+  <span>O firmie</span>
+  <div class="w-0 h-[2px] bg-slate-800 transition-all group-hover/text:w-full group-hover/text:h-[2px]"></div>
+  `;
 
   const registerLink = document.createElement('a');
-  registerLink.setAttribute('href', '#register');
+  registerLink.setAttribute('href', '#realizations');
   registerLink.id = 'realizations';
-  registerLink.textContent = 'Realizacje';
-  registerLink.classList.add('text-center', 'animate-opacity');
+  registerLink.classList.add(
+    'text-center',
+    'animate-opacity',
+    'group/text',
+    'box-border'
+  );
+  registerLink.innerHTML = `
+  <span>Realizacje</span>
+  <div class="w-0 h-[2px] bg-slate-800 transition-all group-hover/text:w-full group-hover/text:h-[2px]"></div>
+  `;
 
   const contactLink = document.createElement('a');
   contactLink.setAttribute('href', '#contact');
   contactLink.id = 'contact';
-  contactLink.classList.add('animate-opacity');
-  contactLink.textContent = 'Kontakt';
+  contactLink.classList.add('animate-opacity', 'group/text', 'box-border');
+  contactLink.innerHTML = `
+  <span>Kontakt</span>
+  <div class="w-0 h-[2px] bg-slate-800 transition-all group-hover/text:w-full group-hover/text:h-[2px]"></div>
+  `;
 
   const searchInput = document.createElement('input');
   searchInput.setAttribute('type', 'text');

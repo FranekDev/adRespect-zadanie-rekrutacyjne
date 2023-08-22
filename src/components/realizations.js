@@ -48,7 +48,6 @@ const expandGallery = (macy) => {
 
   expandBtn.addEventListener('click', () => {
     images.classList.remove('animate-opacity');
-
     gallery.classList.add(
       'w-[85vw]',
       'bg-white',
@@ -92,7 +91,8 @@ const Realizations = () => {
     'h-auto',
     'pt-[120px]',
     'pb-11',
-    'realizations-container'
+    'realizations-container',
+    'z-10'
   );
   section.innerHTML = `
     <div class="h-full relative">

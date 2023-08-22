@@ -19,3 +19,16 @@ About();
 Realizations();
 Contact();
 Footer();
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('showElement');
+    } else {
+      entry.target.classList.remove('showElement');
+    }
+  });
+});
+
+const toAnimate = document.querySelectorAll('.hideElement');
+toAnimate.forEach((el) => observer.observe(el));

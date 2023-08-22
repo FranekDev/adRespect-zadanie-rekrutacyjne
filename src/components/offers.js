@@ -4,7 +4,7 @@ const Offers = () => {
   const section = document.createElement('section');
   section.id = 'offers';
   section.classList =
-    'flex justify-center items-center flex-col w-full md:h-auto space-y-10 bg-[#F5F0EC] p-5 py-10 pt-[120px] pb-[160px] space-y-[96px]';
+    'hideElement flex justify-center items-center flex-col w-full md:h-auto space-y-10 bg-[#F5F0EC] p-5 py-10 pt-[120px] pb-[160px] space-y-[96px]';
 
   section.innerHTML = `
   <div class="max-w-[1040px] flex-col space-y-5 w-3/4 m-auto text-[#111111]">
@@ -15,7 +15,7 @@ const Offers = () => {
     </div>
   </div>
 
-  <div class="offers-view grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-16 w-auto h-full max-w-[1440px] max-px-[88px]"></div>
+  <div class="hideElement offers-view grid grid-cols-1 place-items-center md:grid-cols-2 lg:grid-cols-3 gap-16 w-auto h-full max-w-[1440px] max-px-[88px]"></div>
   `;
 
   document.body.appendChild(section);
