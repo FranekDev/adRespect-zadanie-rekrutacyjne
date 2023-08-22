@@ -44,6 +44,22 @@ module.exports = {
         decreaseOpacity: {
           from: { opacity: '1' },
           to: { opacity: '0' }
+        },
+        slideLeft: {
+          from: { 'margin-left': '0' },
+          to: { 'margin-left': '-100%' }
+        },
+        slideRight: {
+          from: { 'margin-left': '0' },
+          to: { 'margin-left': '100%' }
+        },
+        slideTop: {
+          from: { 'margin-top': '-100%' },
+          to: { 'margin-top': '0' }
+        },
+        slideBottom: {
+          from: { 'margin-top': '0' },
+          to: { 'margin-top': '-100%' }
         }
       },
       animation: {
@@ -54,7 +70,11 @@ module.exports = {
         showMobileMenu: 'showMobileMenu .2s ease-in-out forwards',
         hideMobileMenu: 'hideMobileMenu .2s ease-in-out forwards',
         opacity: 'opacity .2s ease-in-out forwards',
-        decreaseOpacity: 'decreaseOpacity .2s ease-in-out forwards'
+        decreaseOpacity: 'decreaseOpacity .2s ease-in-out forwards',
+        slideLeft: 'slideLeft .3s ease-in-out forwards',
+        slideRight: 'slideRight .3s ease-in-out forwards',
+        slideTop: 'slideTop .3s ease-in-out forwards',
+        slideBottom: 'slideBottom .3s ease-in-out forwards'
       }
     }
   },

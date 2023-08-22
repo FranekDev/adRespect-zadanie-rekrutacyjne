@@ -34,7 +34,7 @@ const Hero = () => {
 
     </div>
 
-    <div class="h-[92vh] md:h-auto w-full md:w-1/2 relative bg-[#F5F0EC]">
+    <div class="h-[92vh] md:h-auto w-full md:w-1/2 relative bg-[#F5F0EC] overflow-hidden">
         <img src="1.jpg" class="h-full w-full object-cover" id="img-slider">
         <div class="flex bottom-0 right-0 absolute px-8 py-6 space-x-8 bg-[#F5F0EC]">
             <button class="w-[50px] h-[50px] flex justify-center items-center" id="left">
@@ -65,8 +65,37 @@ const Hero = () => {
   ];
   let currentIndex = 0;
 
-  const updateSliderImage = (index) => {
+  const updateSliderImage = (index, auto = true, type = '') => {
     img.src = images[index];
+    if (type === 'next' || type === '') {
+      img.classList.add('animate-slideTop', 'animate-opacity');
+    } else {
+      img.classList.add('animate-opacity');
+    }
+
+    if (auto) {
+      const imgToAnimate = document.querySelector(`[src='${images[index]}']`);
+      setTimeout(() => {
+        imgToAnimate.classList.add('animate-slideLeft');
+      }, 2500);
+
+      setTimeout(() => {
+        imgToAnimate.classList.remove('animate-slideLeft');
+        if (type === 'next' || type === '') {
+          img.classList.remove('animate-slideTop', 'animate-opacity');
+        } else {
+          img.classList.remove('animate-opacity');
+        }
+      }, 300);
+    } else {
+      setTimeout(() => {
+        if (type === 'next' || type === '') {
+          img.classList.remove('animate-slideTop', 'animate-opacity');
+        } else {
+          img.classList.remove('animate-opacity');
+        }
+      }, 300);
+    }
   };
 
   next.addEventListener('click', () => {
@@ -75,7 +104,7 @@ const Hero = () => {
       updateSliderImage(currentIndex);
     } else if (currentIndex < images.length - 1) {
       currentIndex++;
-      updateSliderImage(currentIndex);
+      updateSliderImage(currentIndex, false, 'next');
     }
   });
 
@@ -85,7 +114,7 @@ const Hero = () => {
       updateSliderImage(currentIndex);
     } else if (currentIndex > 0) {
       currentIndex--;
-      updateSliderImage(currentIndex);
+      updateSliderImage(currentIndex, false, 'prev');
     }
   });
 
