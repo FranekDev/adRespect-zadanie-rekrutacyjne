@@ -4,19 +4,19 @@ const searchField = (hide) => {
   let isHidden = hide;
   searchIcon.addEventListener('click', () => {
     if (isHidden) {
-      input.classList.remove('md:hidden');
-      input.classList.remove('md:animate-hideInput');
-      input.classList.add('md:animate-expandInput');
+      input.classList.remove('lg:hidden');
+      input.classList.remove('lg:animate-hideInput');
+      input.classList.add('lg:animate-expandInput');
       isHidden = !isHidden;
-      searchIcon.classList.remove('md:animate-rotateRight');
-      searchIcon.classList.add('md:animate-rotateLeft');
+      searchIcon.classList.remove('lg:animate-rotateRight');
+      searchIcon.classList.add('lg:animate-rotateLeft');
     } else {
-      searchIcon.classList.remove('md:animate-rotateLeft');
-      searchIcon.classList.add('md:animate-rotateRight');
-      input.classList.remove('md:animate-expandInput');
-      input.classList.add('md:animate-hideInput');
+      searchIcon.classList.remove('lg:animate-rotateLeft');
+      searchIcon.classList.add('lg:animate-rotateRight');
+      input.classList.remove('lg:animate-expandInput');
+      input.classList.add('lg:animate-hideInput');
       setTimeout(() => {
-        input.classList.add('md:hidden');
+        input.classList.add('lg:hidden');
       }, 530);
       isHidden = !isHidden;
     }
@@ -112,7 +112,7 @@ const mobileMenu = (hide) => {
 const Nav = () => {
   const navbar = document.createElement('nav');
   navbar.classList =
-    'hideElement bg-white w-full px-6 py-3 md:p-6 flex justify-between items-center sticky top-0 z-10 h-[8vh]';
+    'hideElement bg-white w-full px-6 py-3 lg:p-6 flex justify-between items-center sticky top-0 z-10 h-[8vh]';
 
   const logoContainer = document.createElement('span');
   logoContainer.textContent = 'Logo';
@@ -125,7 +125,7 @@ const Nav = () => {
   const links = document.createElement('div');
   links.id = 'links';
   links.classList =
-    'md:flex text-[#111111] md:gap-10 gap-3 [&>*]:cursor-pointer md:flex-row md:relative md:m-0 justify-start items-start md:justify-center md:items-center fixed mt-[450px] rounded-xl py-5 px-6 md:p-0 bg-white flex flex-col left-1/2 -translate-x-1/2 w-[85vw] shadow-xl md:shadow-none md:w-auto md:left-0 md:translate-x-0 hidden animate-showMobileMenu md:animate-none font-inter';
+    'lg:flex text-[#111111] lg:gap-10 gap-3 [&>*]:cursor-pointer lg:flex-row lg:relative lg:m-0 justify-start items-start lg:justify-center lg:items-center fixed mt-[450px] rounded-xl py-5 px-6 lg:p-0 bg-white flex flex-col left-1/2 -translate-x-1/2 w-[85vw] shadow-xl lg:shadow-none lg:w-auto lg:left-0 lg:translate-x-0 hidden animate-showMobileMenu lg:animate-none font-inter';
 
   const dropdown = document.createElement('div');
   dropdown.id = 'dropdown';
@@ -136,14 +136,14 @@ const Nav = () => {
   offersLink.id = 'offer';
   offersLink.textContent = 'Oferta';
   offersLink.classList =
-    'offers flex gap-2 justify-start items-start md:justify-center md:items-center h-auto group animate-opacity';
+    'offers flex gap-2 justify-start items-start lg:justify-center lg:items-center h-auto group animate-opacity';
 
   const arrowContainer = document.createElement('div');
   arrowContainer.classList.add(
     'group-hover:rotate-180',
     'transition-all',
     'hidden',
-    'md:block'
+    'lg:block'
   );
   arrowContainer.innerHTML = `
   <img src="./svg/arrowDown.svg" alt="Rozwiń">
@@ -154,26 +154,26 @@ const Nav = () => {
     'offers-list',
     'w-auto',
     'h-auto',
-    'md:py-5',
-    'md:px-6',
-    'md:bg-white',
-    'md:mt-[-200px]',
-    'md:group-hover:mt-[24px]',
-    'md:shadow-xl',
-    'md:rounded-md',
-    'md:absolute',
+    'lg:py-5',
+    'lg:px-6',
+    'lg:bg-white',
+    'lg:mt-[-200px]',
+    'lg:group-hover:mt-[24px]',
+    'lg:shadow-xl',
+    'lg:rounded-md',
+    'lg:absolute',
     'z-[-100]',
-    'md:border-none',
+    'lg:border-none',
     'border-l-2',
     'border-slate-300',
     'transition-all',
-    'md:m-0',
+    'lg:m-0',
     'ml-5',
     'mt-2'
   );
   const offersList = document.createElement('ul');
   offersList.id = 'offers-list';
-  offersList.classList.add('space-y-2', 'md:text-center', 'relative');
+  offersList.classList.add('space-y-2', 'lg:text-center', 'relative');
   const offerElementOne = document.createElement('li');
   const offerElementTwo = document.createElement('li');
   const offerElementThree = document.createElement('li');
@@ -242,16 +242,16 @@ const Nav = () => {
   searchInput.setAttribute('placeholder', 'Search');
   searchInput.id = 'search-input';
   searchInput.classList =
-    'bg-transparent h-auto outline-none p-0.5 border-b-2 border-black md:hidden w-40 box-border';
+    'bg-transparent h-auto outline-none p-0.5 border-b-2 border-black lg:hidden w-40 box-border';
 
   const searchContainer = document.createElement('div');
-  searchContainer.classList = `flex justify-center items-center h-full hidden md:block animate-opacity`;
+  searchContainer.classList = `flex justify-center items-center h-full hidden lg:block animate-opacity`;
   searchContainer.innerHTML = `
   <img src="./svg/search.svg" alt="Szukaj" id="search-icon">
   `;
 
   const burgerMenu = document.createElement('div');
-  burgerMenu.classList = 'md:hidden';
+  burgerMenu.classList = 'lg:hidden';
   burgerMenu.innerHTML = `
   <div class="space-y-2 cursor-pointer" id="burger-menu">
     <span class="block w-8 h-[0.2rem] bg-gray-600"></span>
