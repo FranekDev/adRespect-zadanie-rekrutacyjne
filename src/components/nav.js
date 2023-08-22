@@ -103,7 +103,7 @@ const mobileMenu = (hide) => {
 const Nav = () => {
   const navbar = document.createElement('nav');
   navbar.classList =
-    'bg-slate-100 w-full px-6 py-3 md:p-6 flex justify-between items-center sticky top-0 z-10 h-[8vh]';
+    'bg-white w-full px-6 py-3 md:p-6 flex justify-between items-center sticky top-0 z-10 h-[8vh]';
 
   const logoContainer = document.createElement('span');
   logoContainer.textContent = 'Logo';
@@ -116,7 +116,7 @@ const Nav = () => {
   const links = document.createElement('div');
   links.id = 'links';
   links.classList =
-    'md:flex text-[#111111] md:gap-10 gap-3 [&>*]:cursor-pointer md:flex-row md:relative md:m-0 justify-start items-start md:justify-center md:items-center fixed mt-[450px] rounded-xl py-5 px-6 md:p-0 bg-slate-100 flex flex-col left-1/2 -translate-x-1/2 w-[85vw] shadow-xl md:shadow-none md:w-auto md:left-0 md:translate-x-0 hidden animate-showMobileMenu md:animate-none';
+    'md:flex text-[#111111] md:gap-10 gap-3 [&>*]:cursor-pointer md:flex-row md:relative md:m-0 justify-start items-start md:justify-center md:items-center fixed mt-[450px] rounded-xl py-5 px-6 md:p-0 bg-white flex flex-col left-1/2 -translate-x-1/2 w-[85vw] shadow-xl md:shadow-none md:w-auto md:left-0 md:translate-x-0 hidden animate-showMobileMenu md:animate-none';
 
   const dropdown = document.createElement('div');
   dropdown.id = 'dropdown';

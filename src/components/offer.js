@@ -4,7 +4,7 @@ const Offer = (title, description, icon) => {
   page.innerHTML = `
 <div class="w-auto h-auto group">
 
-<div class="flex-col bg-white md:w-80 w-72 h-auto md:h-[370px] space-y-10 md:space-y-20 py-12 px-10 rounded-xl transition-all group-hover:[transform:rotateY(360deg)] cursor-pointer hover:scale-105 hover:shadow-xl">
+<div class="flex-col bg-white md:w-80 w-72 h-auto md:h-[370px] space-y-10 md:space-y-20 py-12 px-10 rounded-xl transition-all group-hover:[transform:rotateY(360deg)] cursor-pointer hover:scale-105 group-hover:shadow-xl">
     <div class="space-y-3">
         <div>
             ${icon}
