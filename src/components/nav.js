@@ -147,7 +147,7 @@ const Nav = () => {
     'h-auto',
     'md:py-5',
     'md:px-6',
-    'md:bg-slate-100',
+    'md:bg-white',
     'md:mt-[9vh]',
     'md:shadow-xl',
     'md:rounded-md',
@@ -248,7 +248,7 @@ const Nav = () => {
     offer.classList.add(
       'px-2',
       'py-0.5',
-      'hover:bg-slate-200',
+      'hover:bg-slate-100',
       'hover:px-2',
       'hover:py-0.5',
       'hover:rounded-md',
